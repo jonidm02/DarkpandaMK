@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID', '26626715'])
-API_HASH = environ['API_HASH', '967f1c73aa77a29009bc364edd30b525']
-BOT_TOKEN = environ['BOT_TOKEN', "7858161722:AAHWI-xUfW6li-jcqSnR5hANeWYlh0C04Vk"]
+API_ID = int(environ['API_ID', '20247467'])
+API_HASH = environ['API_HASH', '8ab4a0d75eec6fe40b85144c2c0ff418']
+BOT_TOKEN = environ['BOT_TOKEN', "7609890466:AAH7a92sI-6vJyfBccIQ7Om294X5ub8boJE"]
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,9 +27,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7216492043').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002336473544').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '7216492043').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7314923110 7216492043').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002495746441').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '7314923110 7216492043').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', 'https://t.me/+FfRIexHWFM04YTA1')
 auth_grp = environ.get('AUTH_GROUP')
@@ -61,7 +61,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+-CWDhekYZiwwMmZl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+i9S8XXcCY9hkYWFl')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002257124082'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002358196072'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DQ_The_File_Donor_Support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
