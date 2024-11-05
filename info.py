@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ('API_ID', '20247467'))
 API_HASH = environ('API_HASH', '8ab4a0d75eec6fe40b85144c2c0ff418')
-BOT_TOKEN = environ('BOT_TOKEN', "7609890466:AAH7a92sI-6vJyfBccIQ7Om294X5ub8boJE")
+BOT_TOKEN = environ('BOT_TOKEN', "7183447790:AAFawsUBChuDVyFA5Z920hZJD7wud-yP9JI")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -28,7 +28,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7314923110 7216492043').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002480000878').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002495530224').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '7314923110 7216492043').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1002162032884')
@@ -61,7 +61,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+-CWDhekYZiwwMmZl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+i9S8XXcCY9hkYWFl')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002292295214'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002454785269'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DQ_The_File_Donor_Support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
